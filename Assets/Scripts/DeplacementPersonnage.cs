@@ -54,7 +54,7 @@ public class DeplacementPersonnage : MonoBehaviour
         //new Vector2(0,-1)
         estAuSol = Physics2D.Raycast(transform.position,Vector2.down,0.1f, masqueSol); /*avoir un rayon dans notre personnage pour détecter les collisions*/
         Debug.DrawRay(transform.position,Vector2.down * 0.1, Color.orange);
-        if (actionSaut.WasPressedThisFrame() == true && estAuSol == true)
+        if (actionSaut.WasPressedThisFrame() == true && estAuSol == true) /**/
         {
             inputSaut = true;
         }
